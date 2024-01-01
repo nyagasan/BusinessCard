@@ -67,8 +67,10 @@ fun IconText(){
 @Composable
 fun GreetingPreview() {
     BusinessCardTheme {
-        Greeting("Android")
-        NameSection()
-        IconText()
+        Column {
+            Greeting("Android")
+            NameSection()
+            IconText()
+        }
     }
 }
