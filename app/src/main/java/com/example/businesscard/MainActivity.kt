@@ -10,6 +10,9 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Call
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -64,7 +67,10 @@ fun NameSection(modifier: Modifier = Modifier){
 @Composable
 fun IconText(){
     Row {
-        // Icon
+        Icon(
+            imageVector = Icons.Default.Call,
+            contentDescription = "Call Icon"
+        )
         Text(text = "Sample")
     }
 }
